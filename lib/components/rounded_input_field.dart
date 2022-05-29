@@ -22,9 +22,12 @@ class RoundedInputField extends StatelessWidget {
         decoration: InputDecoration(
           icon: Icon(
             icon,
-            color: kPrimaryLightColor,
+            color: kPrimaryColor,
           ),
           hintText: "Your Email",
+          hintStyle: TextStyle(
+            color: kPrimaryColor,
+          ),
           border: InputBorder.none,
         ),
       ),
