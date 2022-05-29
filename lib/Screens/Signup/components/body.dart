@@ -41,7 +41,7 @@ class Body extends StatelessWidget {
               onChanged: (value) {},
             ),
             RoundedButton(
-              text: "SIGN UP",
+              text: "REGISTER",
               press: () {
               },
             ),

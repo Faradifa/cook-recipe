@@ -45,7 +45,7 @@ class Body extends StatelessWidget {
               },
             ),
             RoundedButton(
-              text: "SIGN UP",
+              text: "REGISTER",
               color: kPrimaryColor,
               press: () {
                 Navigator.push(
