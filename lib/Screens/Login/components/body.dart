@@ -1,4 +1,5 @@
 import 'package:cookrecipe/Screens/Signup/signup_screen.dart';
+import 'package:cookrecipe/Screens/home/home-screen.dart';
 import 'package:cookrecipe/components/rounded_button.dart';
 import 'package:flutter/material.dart';
 import 'package:cookrecipe/Screens/Login/components/background.dart';
@@ -44,7 +45,16 @@ class Body extends StatelessWidget {
             ),
             RoundedButton(
               text: "LOGIN",
-              press: () {},
+              press: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) {
+                      return HomeScreen();
+                    },
+                  ),
+                );
+              },
             ),
             AlreadyHaveAnAccontCheck(
               press: () {

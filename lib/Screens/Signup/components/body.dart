@@ -1,6 +1,7 @@
 import 'package:cookrecipe/Screens/Signup/components/medsos_icon.dart';
 import 'package:cookrecipe/Screens/Signup/components/or_divider.dart';
 import 'package:cookrecipe/Screens/Login/login_screen.dart';
+import 'package:cookrecipe/Screens/home/home-screen.dart';
 import 'package:cookrecipe/components/already_have_an_account_check.dart';
 import 'package:cookrecipe/components/rounded_button.dart';
 import 'package:cookrecipe/components/rounded_password_field.dart';
@@ -19,7 +20,7 @@ class Body extends StatelessWidget {
           children: <Widget>[
             SizedBox(height: size.height * 0.02),
             Text(
-              "SIGN UP",
+              "REGISTER",
               style: TextStyle(
                 fontWeight: FontWeight.bold,
                 fontSize: 40,
@@ -43,6 +44,14 @@ class Body extends StatelessWidget {
             RoundedButton(
               text: "REGISTER",
               press: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) {
+                      return HomeScreen();
+                    },
+                  ),
+                );
               },
             ),
             AlreadyHaveAnAccontCheck(
