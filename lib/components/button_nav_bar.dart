@@ -1,3 +1,4 @@
+import 'package:cookrecipe/constants.dart';
 import 'package:flutter/material.dart';
 
 class BottunNavBar extends StatelessWidget {
@@ -34,6 +35,7 @@ class BottunNavBar extends StatelessWidget {
               "assets/icons/heart.png",
               height: 25,
               width: 25,
+              color: kPrimaryColorHome,
             ),
             onPressed: () {},
           ),
@@ -42,14 +44,16 @@ class BottunNavBar extends StatelessWidget {
               "assets/icons/home.png",
               height: 25,
               width: 25,
+              color: kPrimaryColorHome,
             ),
             onPressed: () {},
           ),
           IconButton(
             icon: Image.asset(
-              "assets/icons/user.png",
+              "assets/icons/userLine.png",
               height: 25,
               width: 25,
+              color: kPrimaryColorHome,
             ),
             onPressed: () {},
           ),

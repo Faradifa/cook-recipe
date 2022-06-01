@@ -11,7 +11,7 @@ class Body extends StatelessWidget {
     return Column(
       children: <Widget> [
         ItemImage(
-            imgScr: "assets/images/burger.png"
+            imgScr: "assets/icons/burger.png"
         ),
         Expanded(
           child: ItemInfo(),

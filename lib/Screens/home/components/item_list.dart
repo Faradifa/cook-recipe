@@ -16,7 +16,7 @@ class ItemList extends StatelessWidget {
           ItemCard(
             image: 'assets/icons/burger.png',
             title: 'Burger',
-            shopName: "MacDonald's",
+            shopName: "American Food Recipe",
             press: () {
               Navigator.push(
                 context,
@@ -29,7 +29,7 @@ class ItemList extends StatelessWidget {
           ItemCard(
             image: 'assets/icons/noodles.png',
             title: 'Noodles',
-            shopName: "Wendys",
+            shopName: "Asian Food Recipe",
             press: () {},
           ),
           ItemCard(
@@ -53,7 +53,7 @@ class ItemList extends StatelessWidget {
           ItemCard(
             image: 'assets/icons/taco.png',
             title: 'Taco',
-            shopName: "KFC",
+            shopName: "Mexican Food Recipe",
             press: () {},
           ),
         ],
