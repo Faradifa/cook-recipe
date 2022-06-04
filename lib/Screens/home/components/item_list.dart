@@ -1,3 +1,4 @@
+import 'package:cookrecipe/Screens/profile/profile_screen.dart';
 import 'package:cookrecipe/screens/details/details-screen.dart';
 import 'package:flutter/material.dart';
 import 'package:cookrecipe/screens/home/components/item_card.dart';
@@ -12,7 +13,7 @@ class ItemList extends StatelessWidget {
     return SingleChildScrollView(
       scrollDirection: Axis.horizontal,
       child: Row(
-        children: <Widget> [
+        children: <Widget>[
           ItemCard(
             image: 'assets/icons/burger.png',
             title: 'Burger',
@@ -30,7 +31,14 @@ class ItemList extends StatelessWidget {
             image: 'assets/icons/noodles.png',
             title: 'Noodles',
             shopName: "Asian Food Recipe",
-            press: () {},
+            press: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => ProfileScreen(),
+                ),
+              );
+            },
           ),
           ItemCard(
             image: 'assets/icons/pancake.png',

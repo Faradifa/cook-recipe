@@ -40,7 +40,7 @@ class TitlePriceRating extends StatelessWidget {
                     SizedBox(width: 10),
                     Text("$numOfReview reviews"),
                   ],
-                )
+                ),
               ],
             ),
           ),

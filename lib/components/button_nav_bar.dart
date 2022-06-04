@@ -1,8 +1,10 @@
+import 'package:cookrecipe/Screens/profile/profile_screen.dart';
 import 'package:cookrecipe/constants.dart';
 import 'package:flutter/material.dart';
 
-class BottunNavBar extends StatelessWidget {
-  const BottunNavBar({
+class ButtonNavBar extends StatelessWidget {
+
+  const ButtonNavBar({
     Key? key,
   }) : super(key: key);
 

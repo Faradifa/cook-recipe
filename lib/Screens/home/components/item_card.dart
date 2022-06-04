@@ -19,8 +19,8 @@ class ItemCard extends StatelessWidget {
     Size size = MediaQuery.of(context).size;
     return Container(
       margin: EdgeInsets.only(
-          left: 20,
-          right: 15,
+          left: 10,
+          right: 10,
           top: 20,
           bottom: 20,
       ),

@@ -11,8 +11,8 @@ class ItemImage extends StatelessWidget {
   Widget build(BuildContext context) {
     Size size = MediaQuery.of(context).size;
     return Image.asset(
-      "assets/images/burger.png",
-      height: size.height * 0.25,
+      "assets/icons/burger.png",
+      height: size.height * 0.45,
       width: double.infinity,
       fit: BoxFit.fill,
     );
