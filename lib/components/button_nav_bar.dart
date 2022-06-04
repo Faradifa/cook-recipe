@@ -1,9 +1,9 @@
+import 'package:cookrecipe/Screens/home/home-screen.dart';
 import 'package:cookrecipe/Screens/profile/profile_screen.dart';
 import 'package:cookrecipe/constants.dart';
 import 'package:flutter/material.dart';
 
 class ButtonNavBar extends StatelessWidget {
-
   const ButtonNavBar({
     Key? key,
   }) : super(key: key);
@@ -48,7 +48,11 @@ class ButtonNavBar extends StatelessWidget {
               width: 25,
               color: kPrimaryColorHome,
             ),
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(context, MaterialPageRoute(builder: (context) {
+                return HomeScreen();
+              }));
+            },
           ),
           IconButton(
             icon: Image.asset(
@@ -57,7 +61,11 @@ class ButtonNavBar extends StatelessWidget {
               width: 25,
               color: kPrimaryColorHome,
             ),
-            onPressed: () {},
+            onPressed: () {
+              Navigator.push(context, MaterialPageRoute(builder: (context) {
+                return ProfileScreen();
+              }));
+            },
           ),
         ],
       ),

@@ -31,14 +31,7 @@ class ItemList extends StatelessWidget {
             image: 'assets/icons/noodles.png',
             title: 'Noodles',
             shopName: "Asian Food Recipe",
-            press: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) => ProfileScreen(),
-                ),
-              );
-            },
+            press: () {},
           ),
           ItemCard(
             image: 'assets/icons/pancake.png',
